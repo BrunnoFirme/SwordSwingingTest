@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e62c74aa61cbf04295f0864b3b95481, type: 3}
+  m_Name: SwingRight_0_0
+  m_EditorClassIdentifier: 
+  numPoints: 20
+  frameRate: 120
+  startFromPos: 0
+  animSegs:
+  - animType: 0
+    start: {x: -4.5, y: -1, z: -2.2}
+    end: {x: -4.5, y: -1, z: -2.2}
+    second: {x: 0, y: 0, z: 0}
+    third: {x: 0, y: 0, z: 0}
+    percentageSecondx: 150
+    percentageSecondy: 150
+    percentageSecondz: 150
+    percentageThirdx: 90
+    percentageThirdy: 90
+    percentageThirdz: 90
+    curveNum: 2
+    enabled: 1
+    dataPoints:
+    - {x: -4.5, y: -1, z: -2.2}
+    - {x: -4.6, y: -1, z: -2.7}
+    - {x: -4.48, y: -1, z: -2.1000001}
+    - {x: -4.5, y: -1, z: -2.2}
+    procAnimation: {fileID: 11400000}
+    results:
+    - {x: -4.3, y: -1, z: -1.2}
+    - {x: -4.34192, y: -0.99999994, z: -1.4096}
+    - {x: -4.3779597, y: -0.9999999, z: -1.5897999}
+    - {x: -4.4085407, y: -1.0000001, z: -1.7427002}
+    - {x: -4.43408, y: -1, z: -1.8704003}
+    - {x: -4.455, y: -1, z: -1.975}
+    - {x: -4.47172, y: -1, z: -2.0586}
+    - {x: -4.4846597, y: -0.9999999, z: -2.1232998}
+    - {x: -4.4942403, y: -1, z: -2.1712003}
+    - {x: -4.50088, y: -1, z: -2.2044}
+    - {x: -4.505, y: -1, z: -2.2250001}
+    - {x: -4.50702, y: -1, z: -2.2351}
+    - {x: -4.50736, y: -0.99999994, z: -2.2368002}
+    - {x: -4.50644, y: -1, z: -2.2322001}
+    - {x: -4.5046797, y: -1, z: -2.2234}
+    - {x: -4.5025, y: -1, z: -2.2125}
+    - {x: -4.5003204, y: -1, z: -2.2016}
+    - {x: -4.49856, y: -1, z: -2.1928}
+    - {x: -4.49764, y: -1, z: -2.1882}
+    - {x: -4.49798, y: -1, z: -2.1899002}
+  - animType: 1
+    start: {x: 5, y: 268, z: 67}
+    end: {x: 5, y: 268, z: 67}
+    second: {x: 0, y: 0, z: 0}
+    third: {x: 0, y: 0, z: 0}
+    percentageSecondx: 50
+    percentageSecondy: 50
+    percentageSecondz: 50
+    percentageThirdx: 120
+    percentageThirdy: 120
+    percentageThirdz: 120
+    curveNum: 2
+    enabled: 1
+    dataPoints:
+    - {x: 5, y: 268, z: 67}
+    - {x: -7.5, y: 93.5, z: 74}
+    - {x: 10, y: 337.8, z: 64.2}
+    - {x: 5, y: 268, z: 67}
+    procAnimation: {fileID: 11400000}
+    results:
+    - {x: -20, y: -81, z: 81}
+    - {x: -18.090935, y: -54.349483, z: 79.93092}
+    - {x: -16.127499, y: -26.93989, z: 78.83139}
+    - {x: -14.130313, y: 0.94083697, z: 77.71298}
+    - {x: -12.120001, y: 29.004807, z: 76.587204}
+    - {x: -10.1171875, y: 56.96406, z: 75.46562}
+    - {x: -8.142499, y: 84.5307, z: 74.359795}
+    - {x: -6.216562, y: 111.41678, z: 73.28127}
+    - {x: -4.36, y: 137.33441, z: 72.24161}
+    - {x: -2.5934381, y: 161.99559, z: 71.25233}
+    - {x: -0.9375, y: 185.11249, z: 70.325}
+    - {x: 0.587188, y: 206.39713, z: 69.471176}
+    - {x: 1.9600003, y: 225.5616, z: 68.7024}
+    - {x: 3.1603115, y: 242.31793, z: 68.03022}
+    - {x: 4.1674995, y: 256.3783, z: 67.4662}
+    - {x: 4.9609375, y: 267.45468, z: 67.02187}
+    - {x: 5.5200005, y: 275.25922, z: 66.7088}
+    - {x: 5.8240623, y: 279.5039, z: 66.53853}
+    - {x: 5.8525, y: 279.90088, z: 66.5226}
+    - {x: 5.584687, y: 276.16223, z: 66.67258}
+  - animType: 2
+    start: {x: 0, y: 0, z: 0}
+    end: {x: 0, y: 0, z: 0}
+    second: {x: 0, y: 0, z: 0}
+    third: {x: 0, y: 0, z: 0}
+    percentageSecondx: 50
+    percentageSecondy: 50
+    percentageSecondz: 50
+    percentageThirdx: 50
+    percentageThirdy: 50
+    percentageThirdz: 50
+    curveNum: 0
+    enabled: 0
+    dataPoints:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    procAnimation: {fileID: 11400000}
+    results:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}

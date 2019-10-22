@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e62c74aa61cbf04295f0864b3b95481, type: 3}
+  m_Name: SwingToLeft3
+  m_EditorClassIdentifier: 
+  numPoints: 15
+  frameRate: 120
+  startFromPos: 0
+  animSegs:
+  - animType: 0
+    start: {x: -0.7, y: -0.2, z: -0.6}
+    end: {x: -0.7, y: -0.2, z: -0.6}
+    second: {x: -0.7, y: -0.2, z: -0.6}
+    third: {x: -0.7, y: -0.2, z: -0.6}
+    percentageSecondx: 90
+    percentageSecondy: 90
+    percentageSecondz: 90
+    percentageThirdx: 90
+    percentageThirdy: 90
+    percentageThirdz: 90
+    curveNum: 2
+    enabled: 1
+    dataPoints:
+    - {x: -0.7, y: -0.2, z: -0.6}
+    - {x: -0.77, y: -0.25, z: -0.43}
+    - {x: -0.77, y: -0.25, z: -0.43}
+    - {x: -0.7, y: -0.2, z: -0.6}
+    procAnimation: {fileID: 11400000}
+    results:
+    - {x: -1.4, y: -0.7, z: 1.1}
+    - {x: -1.2821926, y: -0.6158518, z: 0.8138963}
+    - {x: -1.1799408, y: -0.54281485, z: 0.56557035}
+    - {x: -1.092, y: -0.48000002, z: 0.35200006}
+    - {x: -1.017126, y: -0.42651853, z: 0.170163}
+    - {x: -0.95407397, y: -0.3814814, z: 0.017036978}
+    - {x: -0.90160006, y: -0.344, z: -0.11039999}
+    - {x: -0.8584591, y: -0.31318516, z: -0.21517038}
+    - {x: -0.8234074, y: -0.28814816, z: -0.3002963}
+    - {x: -0.79519993, y: -0.268, z: -0.3688}
+    - {x: -0.77259254, y: -0.25185186, z: -0.42370373}
+    - {x: -0.7543407, y: -0.23881482, z: -0.46802968}
+    - {x: -0.7392, y: -0.228, z: -0.5048}
+    - {x: -0.7259259, y: -0.21851853, z: -0.5370371}
+    - {x: -0.713274, y: -0.2094815, z: -0.567763}
+  - animType: 1
+    start: {x: 11.8, y: -195.1, z: -92.1}
+    end: {x: 11.8, y: -195.1, z: -92.1}
+    second: {x: 11.8, y: -195.1, z: -92.1}
+    third: {x: 11.8, y: -195.1, z: -92.1}
+    percentageSecondx: 10
+    percentageSecondy: 10
+    percentageSecondz: 10
+    percentageThirdx: 10
+    percentageThirdy: 10
+    percentageThirdz: 10
+    curveNum: 2
+    enabled: 1
+    dataPoints:
+    - {x: 11.8, y: -195.1, z: -92.1}
+    - {x: 2.35, y: -143.98001, z: -74.28}
+    - {x: 2.35, y: -143.98001, z: -74.28}
+    - {x: 11.8, y: -195.1, z: -92.1}
+    procAnimation: {fileID: 11400000}
+    results:
+    - {x: 1.3, y: -138.3, z: -72.3}
+    - {x: 1.499111, y: -139.37709, z: -72.67547}
+    - {x: 1.688889, y: -140.40372, z: -73.03334}
+    - {x: 1.8880001, y: -141.48082, z: -73.408806}
+    - {x: 2.115111, y: -142.70938, z: -73.837074}
+    - {x: 2.3888886, y: -144.19037, z: -74.353325}
+    - {x: 2.7280002, y: -146.02483, z: -74.992805}
+    - {x: 3.1511106, y: -148.31363, z: -75.790665}
+    - {x: 3.6768892, y: -151.15785, z: -76.782135}
+    - {x: 4.3240004, y: -154.6584, z: -78.002396}
+    - {x: 5.1111116, y: -158.9163, z: -79.486664}
+    - {x: 6.056889, y: -164.0325, z: -81.270134}
+    - {x: 7.1800003, y: -170.108, z: -83.388}
+    - {x: 8.499112, y: -177.24377, z: -85.87547}
+    - {x: 10.032888, y: -185.54079, z: -88.76773}
+  - animType: 2
+    start: {x: 0, y: 0, z: 0}
+    end: {x: 0, y: 0, z: 0}
+    second: {x: 0, y: 0, z: 0}
+    third: {x: 0, y: 0, z: 0}
+    percentageSecondx: 0
+    percentageSecondy: 0
+    percentageSecondz: 0
+    percentageThirdx: 0
+    percentageThirdy: 0
+    percentageThirdz: 0
+    curveNum: 0
+    enabled: 0
+    dataPoints:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    procAnimation: {fileID: 11400000}
+    results:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
