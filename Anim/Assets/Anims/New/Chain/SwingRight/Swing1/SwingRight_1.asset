@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b91f9dcb552304bb8b6fedaa0fb539, type: 3}
+  m_Name: SwingRight_1
+  m_EditorClassIdentifier: 
+  procAnimChain:
+  - {fileID: 11400000, guid: 0bfe2141f0a0d1a4cb1060c5e2505f0e, type: 2}
+  - {fileID: 11400000, guid: 4a51942b17707b6439e848bd3dbead11, type: 2}
+  - {fileID: 11400000, guid: d78c55d25f518cf4c90e9bfee57202e4, type: 2}
+  - {fileID: 11400000, guid: b2440ff13eb6c26418aa9c99dfebf145, type: 2}

@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -116,8 +117,8 @@ MonoBehaviour:
     - {x: 12.123555, y: 381.56564, z: 88.28088}
     - {x: 11.580444, y: 382.74237, z: 88.14511}
   - animType: 2
-    start: {x: 0, y: 0, z: 0}
-    end: {x: 0, y: 0, z: 0}
+    start: {x: 1, y: 1, z: 1}
+    end: {x: 1, y: 1, z: 1}
     second: {x: 0, y: 0, z: 0}
     third: {x: 0, y: 0, z: 0}
     percentageSecondx: 50
