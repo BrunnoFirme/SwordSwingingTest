@@ -8,11 +8,28 @@ public class SwordSwinging : MonoBehaviour
     public AnimChain[] animChainL;
     public AnimChain[] animChainR;
     public AnimateWithCurve aWC;
+    public SwordSwingScript sSS;
     bool isSwingingRight = false;
     bool isInChain = false;
     int chainPos = 0;
     bool isIdle = true;
     int currentChain = 0;
+
+    private void Start()
+    {
+        if (aWC == null)
+        {
+            Debug.LogError("MISSING ANIMATE WITH CURVE");
+        }
+        if (sSS == null)
+        {
+            Debug.LogError("MISSING SWORD SWING SCRIPT");
+        }
+        if (idle == null)
+        {
+            Debug.LogError("IDLE ANIM IS MISSING");
+        }
+    }
 
     public void FixedUpdate()
     {
@@ -28,7 +45,7 @@ public class SwordSwinging : MonoBehaviour
 
     AnimChain chain;
 
-    public ProcAnimation GetAnim()
+    ProcAnimation GetAnimRaw()
     {
         if (isInChain)
         {
@@ -70,6 +87,16 @@ public class SwordSwinging : MonoBehaviour
             isSwingingRight = false;
             return idle;
         }
+    }
+
+    public ProcAnimation GetAnim()
+    {
+        ProcAnimation anim = GetAnimRaw();
+        if (anim.hasEvent)
+        {
+            sSS.SwingSword();
+        }
+        return anim;
     }
 
     bool attackQ = false;

@@ -9,8 +9,10 @@ public class ProcAnimation: ScriptableObject
     public int frameRate = 120;
     public enum animationType {position, rotation, scale}
     public bool startFromPos;
+    public AnimationPattern defaultPattern;
     public AnimSegment[] animSegs = new AnimSegment[3];
-
+    public bool hasEvent = false;
+    public string EventTrigger = "None";
     /*
      * Priority for anims
      * Break anim/Parry anim/Got Parryed anim/Clash particle
@@ -35,18 +37,26 @@ public class ProcAnimation: ScriptableObject
     }
     private void SetAnimSegment(AnimSegment animSeg)
     {
+        if (animSeg.pattern == null)
+        {
+            animSeg.pattern = defaultPattern;
+        }
         animSeg.dataPoints[0] = animSeg.start;
-        animSeg.dataPoints[1] = getOffsetPoint(new Vector3(animSeg.percentageSecondx, animSeg.percentageSecondy, animSeg.percentageSecondz), animSeg.start, animSeg.end);
-        animSeg.dataPoints[2] = getOffsetPoint(new Vector3(animSeg.percentageThirdx, animSeg.percentageThirdy, animSeg.percentageThirdz), animSeg.start, animSeg.end);
+        animSeg.dataPoints[1] = getOffsetPoint(new Vector3(animSeg.pattern.firstX, animSeg.pattern.firstY, animSeg.pattern.firstZ), animSeg.start, animSeg.end);
+        animSeg.dataPoints[2] = getOffsetPoint(new Vector3(animSeg.pattern.secondX, animSeg.pattern.secondY, animSeg.pattern.secondZ), animSeg.start, animSeg.end);
         animSeg.dataPoints[3] = animSeg.end;
         animSeg.procAnimation = this;
     }
 
     public void SetAnimSegment(AnimSegment animSeg, Vector3 firstPoint)
     {
+        if (animSeg.pattern == null)
+        {
+            animSeg.pattern = defaultPattern;
+        }
         animSeg.dataPoints[0] = animSeg.start;
-        animSeg.dataPoints[1] = getOffsetPoint(new Vector3(animSeg.percentageSecondx, animSeg.percentageSecondy, animSeg.percentageSecondz), firstPoint, animSeg.end);
-        animSeg.dataPoints[2] = getOffsetPoint(new Vector3(animSeg.percentageThirdx, animSeg.percentageThirdy, animSeg.percentageThirdz), firstPoint, animSeg.end);
+        animSeg.dataPoints[1] = getOffsetPoint(new Vector3(animSeg.pattern.firstX, animSeg.pattern.firstY, animSeg.pattern.firstZ), firstPoint, animSeg.end);
+        animSeg.dataPoints[2] = getOffsetPoint(new Vector3(animSeg.pattern.secondX, animSeg.pattern.secondY, animSeg.pattern.secondZ), firstPoint, animSeg.end);
         animSeg.dataPoints[3] = animSeg.end;
         animSeg.procAnimation = this;
     }
@@ -73,14 +83,15 @@ public class AnimSegment
     public Vector3 second;
     [HideInInspector]
     public Vector3 third;
+    public AnimationPattern pattern;
 
-    [Range(-100, 200)] public int percentageSecondx = 50;
-    [Range(-100, 200)] public int percentageSecondy = 50;
-    [Range(-100, 200)] public int percentageSecondz = 50;
+    [Range(-100, 200)] int percentageSecondx = 50;
+    [Range(-100, 200)] int percentageSecondy = 50;
+    [Range(-100, 200)] int percentageSecondz = 50;
 
-    [Range(-100, 200)] public int percentageThirdx = 50;
-    [Range(-100, 200)] public int percentageThirdy = 50;
-    [Range(-100, 200)] public int percentageThirdz = 50;
+    [Range(-100, 200)] int percentageThirdx = 50;
+    [Range(-100, 200)] int percentageThirdy = 50;
+    [Range(-100, 200)] int percentageThirdz = 50;
 
     public int curveNum;
     public bool enabled = true;

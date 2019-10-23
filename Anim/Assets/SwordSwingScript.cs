@@ -11,7 +11,7 @@ public class SwordSwingScript : MonoBehaviour
     [SerializeField]
     GameObject sparkPrefab;
 
-    void SwingSword()
+    public void SwingSword()
     {
         if (lineStart == null)
         {

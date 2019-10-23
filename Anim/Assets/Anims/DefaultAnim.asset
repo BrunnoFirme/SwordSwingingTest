@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -14,25 +15,21 @@ MonoBehaviour:
   numPoints: 5
   frameRate: 60
   startFromPos: 0
+  defaultPattern: {fileID: 11400000, guid: ef521f4bf12b9d84db1fa72480e11387, type: 2}
   animSegs:
   - animType: 0
     start: {x: -3.3, y: -1.6, z: 3.8}
     end: {x: -3.3, y: -1.6, z: 3.8}
     second: {x: -3.3, y: -1.6, z: 3.8}
     third: {x: -3.3, y: -1.6, z: 3.8}
-    percentageSecondx: 50
-    percentageSecondy: 50
-    percentageSecondz: 50
-    percentageThirdx: 50
-    percentageThirdy: 50
-    percentageThirdz: 50
+    pattern: {fileID: 0}
     curveNum: 0
     enabled: 1
     dataPoints:
     - {x: -3.3, y: -1.6, z: 3.8}
-    - {x: -3.3, y: -1.6, z: 3.8}
-    - {x: -3.3, y: -1.6, z: 3.8}
-    - {x: -3.3, y: -1.6, z: 3.8}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
     procAnimation: {fileID: 11400000}
     results: []
   - animType: 2
@@ -40,19 +37,14 @@ MonoBehaviour:
     end: {x: 1, y: 1, z: 1}
     second: {x: 1, y: 1, z: 1}
     third: {x: 1, y: 1, z: 1}
-    percentageSecondx: 0
-    percentageSecondy: 0
-    percentageSecondz: 0
-    percentageThirdx: 0
-    percentageThirdy: 0
-    percentageThirdz: 0
+    pattern: {fileID: 0}
     curveNum: 0
     enabled: 0
     dataPoints:
-    - {x: 1, y: 1, z: 1}
-    - {x: 1, y: 1, z: 1}
-    - {x: 1, y: 1, z: 1}
-    - {x: 1, y: 1, z: 1}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
     procAnimation: {fileID: 11400000}
     results: []
   - animType: 1
@@ -60,18 +52,15 @@ MonoBehaviour:
     end: {x: -27.7, y: -94.5, z: -14.6}
     second: {x: -27.7, y: -94.5, z: -14.6}
     third: {x: -27.7, y: -94.5, z: -14.6}
-    percentageSecondx: 50
-    percentageSecondy: 50
-    percentageSecondz: 50
-    percentageThirdx: 50
-    percentageThirdy: 50
-    percentageThirdz: 50
+    pattern: {fileID: 0}
     curveNum: 0
     enabled: 1
     dataPoints:
-    - {x: -27.7, y: -94.5, z: -14.6}
-    - {x: -27.7, y: -94.5, z: -14.6}
-    - {x: -27.7, y: -94.5, z: -14.6}
-    - {x: -27.7, y: -94.5, z: -14.6}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
     procAnimation: {fileID: 11400000}
     results: []
+  hasEvent: 0
+  EventTrigger: None

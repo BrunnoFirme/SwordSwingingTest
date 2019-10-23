@@ -15,18 +15,14 @@ MonoBehaviour:
   numPoints: 7
   frameRate: 120
   startFromPos: 0
+  defaultPattern: {fileID: 11400000, guid: ef521f4bf12b9d84db1fa72480e11387, type: 2}
   animSegs:
   - animType: 0
     start: {x: -4.3, y: -1, z: -1.2}
     end: {x: -4.3, y: -1, z: -1.2}
     second: {x: 0, y: 0, z: 0}
     third: {x: 0, y: 0, z: 0}
-    percentageSecondx: 90
-    percentageSecondy: 90
-    percentageSecondz: 90
-    percentageThirdx: 90
-    percentageThirdy: 90
-    percentageThirdz: 90
+    pattern: {fileID: 0}
     curveNum: 0
     enabled: 1
     dataPoints:
@@ -48,12 +44,7 @@ MonoBehaviour:
     end: {x: -20, y: -81, z: 81}
     second: {x: 0, y: 0, z: 0}
     third: {x: 0, y: 0, z: 0}
-    percentageSecondx: 90
-    percentageSecondy: 90
-    percentageSecondz: 90
-    percentageThirdx: 90
-    percentageThirdy: 90
-    percentageThirdz: 90
+    pattern: {fileID: 0}
     curveNum: 0
     enabled: 1
     dataPoints:
@@ -75,12 +66,7 @@ MonoBehaviour:
     end: {x: 0, y: 0, z: 0}
     second: {x: 0, y: 0, z: 0}
     third: {x: 0, y: 0, z: 0}
-    percentageSecondx: 50
-    percentageSecondy: 50
-    percentageSecondz: 50
-    percentageThirdx: 50
-    percentageThirdy: 50
-    percentageThirdz: 50
+    pattern: {fileID: 0}
     curveNum: 0
     enabled: 0
     dataPoints:
@@ -97,3 +83,5 @@ MonoBehaviour:
     - {x: 0, y: 0, z: 0}
     - {x: 0, y: 0, z: 0}
     - {x: 0, y: 0, z: 0}
+  hasEvent: 1
+  EventTrigger: Hit
