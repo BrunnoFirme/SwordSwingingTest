@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03b91f9dcb552304bb8b6fedaa0fb539, type: 3}
-  m_Name: SwingRight_2
+  m_Name: SwingLeft_2
   m_EditorClassIdentifier: 
   procAnimChain:
-  - {fileID: 11400000, guid: 09722d69adae1ab4a917bcac2f945e03, type: 2}
-  - {fileID: 11400000, guid: cfe069df1ca5163428e8d4a1768b82c5, type: 2}
-  - {fileID: 11400000, guid: 8a80e9d545a2a1e4da0eb546bf8d8256, type: 2}
+  - {fileID: 11400000, guid: f7de321f36cc9064492ff2a652a5ae9d, type: 2}
+  - {fileID: 11400000, guid: 01fb2813a2568dd4e89177679351e894, type: 2}
+  - {fileID: 11400000, guid: 33f1eef28fdcbc948bf6c60418f551f1, type: 2}

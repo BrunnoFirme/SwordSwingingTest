@@ -23,19 +23,21 @@ public class SaveOri : MonoBehaviour
                     anim.animSegs[0].start = trans.localPosition;
                     anim.animSegs[0].end = trans.localPosition;
                     anim.animSegs[0].curveNum = 2;
+                    anim.animSegs[0].enabled = true;
                     break;
                 case 1:
                     anim.animSegs[1].animType = ProcAnimation.animationType.rotation;
                     anim.animSegs[1].start = trans.rotation.eulerAngles;
                     anim.animSegs[1].end = trans.eulerAngles;
-                    anim.animSegs[0].curveNum = 2;
+                    anim.animSegs[1].curveNum = 2;
+                    anim.animSegs[1].enabled = true;
                     break;
                 case 2:
                     anim.animSegs[2].animType = ProcAnimation.animationType.scale;
                     anim.animSegs[2].start = trans.localScale;
                     anim.animSegs[2].end = trans.localScale;
-                    anim.animSegs[0].curveNum = 2;
-                    anim.animSegs[0].enabled = false;
+                    anim.animSegs[2].curveNum = 2;
+                    anim.animSegs[2].enabled = false;
                     break;
                 default:
                     Debug.Log("Invalid number of animation segments. Animation is " + anim.name);
