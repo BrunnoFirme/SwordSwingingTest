@@ -85,14 +85,6 @@ public class AnimSegment
     public Vector3 third;
     public AnimationPattern pattern;
 
-    [Range(-100, 200)] int percentageSecondx = 50;
-    [Range(-100, 200)] int percentageSecondy = 50;
-    [Range(-100, 200)] int percentageSecondz = 50;
-
-    [Range(-100, 200)] int percentageThirdx = 50;
-    [Range(-100, 200)] int percentageThirdy = 50;
-    [Range(-100, 200)] int percentageThirdz = 50;
-
     public int curveNum;
     public bool enabled = true;
     [HideInInspector]

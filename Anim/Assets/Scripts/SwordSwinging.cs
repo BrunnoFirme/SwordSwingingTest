@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwordSwinging : MonoBehaviour
 {
     public ProcAnimation idle;
+    public ProcAnimation gotParried;
     public AnimChain[] animChainL;
     public AnimChain[] animChainR;
     public AnimateWithCurve aWC;
@@ -13,7 +14,7 @@ public class SwordSwinging : MonoBehaviour
     bool isInChain = false;
     int chainPos = 0;
     bool isIdle = true;
-    int currentChain = 0;
+
 
     private void Start()
     {
@@ -94,7 +95,10 @@ public class SwordSwinging : MonoBehaviour
         ProcAnimation anim = GetAnimRaw();
         if (anim.hasEvent)
         {
-            sSS.SwingSword();
+            chainPos = 0;
+            isInChain = false;
+            return gotParried;
+            //sSS.SwingSword();
         }
         return anim;
     }

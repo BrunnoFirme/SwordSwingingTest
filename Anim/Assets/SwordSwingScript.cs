@@ -37,7 +37,6 @@ public class SwordSwingScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             SwingSword();
-            Debug.Log("Sword was Swung");
         }
     }
 }
